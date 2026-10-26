@@ -1,5 +1,5 @@
 #!/bin/bash
-# dit au système d'exécuter ce fichier aec Bash
+# dit au système d'exécuter ce fichier avec Bash
 
 mkdir -p models
 # mettre en place le dossier models / -p évite l'erreur si ce dossier existe
@@ -12,24 +12,24 @@ touch models/router.py models/worstation.py models/server.py models/wireless.py
 [ -f README.md ] && [ ! -s README.md ] && echo "# Topologie réseau en Python" > README.md
 #n'écrit le titre que si README.md est vide (pour ne pas écraser mon texte)
 
-cat > .gitignore << 'EOF'
+cat > .gitignore << 'EOF' # cat = écrire dans le fichier 
 __pycache__/
 *.pyc
 .venv/
 .vscode/
 EOF
+# EOF = end of file = fin du ficher
 # écrit la liste des éléments que GIT ignore
 
 if [ ! -d ".git" ]; then
-git init # met en place le dépôt s'in n'existe pas
+git init # met en place le dépôt s'il n'existe pas
 git config user.name "Anthony"
 git config user.email "gareauanthony2@gmail.com"
 git remote add origin git@github.com:gareauanthony2-star/reseau-python.git
-fi
-# [ ! -d ".git" ] = "si le dossier .git n'existe pas"
-
 git add . # prépare tous les fichiers
 git commit -m "Initialisation du projet" # enregistre une version
 git branch -M main # nomme la branche "main"
 git push -u origin main # envoie sur gitlab  
+fi
+# [ ! -d ".git" ] = "si le dossier .git n'existe pas"
 
