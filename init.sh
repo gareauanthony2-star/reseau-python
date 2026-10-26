@@ -33,3 +33,4 @@ git push -u origin main # envoie sur gitlab
 fi
 # [ ! -d ".git" ] = "si le dossier .git n'existe pas"
 
+# le contenu du fichier .git est rempli automatiquement
