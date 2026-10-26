@@ -4,7 +4,7 @@
 mkdir -p models
 # mettre en place le dossier models / -p évite l'erreur si ce dossier existe
 
-touch README.md .gritignore main.py
+touch README.md .gitignore main.py
 touch models/__init__.py models/machine.py models/switch.py
 touch models/router.py modesl/worstation.py models/server.py models/wireless.py
 # touch = mettre en place des fichiers vides (sans toucher les existants)
