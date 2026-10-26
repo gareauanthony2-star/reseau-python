@@ -6,7 +6,7 @@ mkdir -p models
 
 touch README.md .gitignore main.py
 touch models/__init__.py models/machine.py models/switch.py
-touch models/router.py modesl/worstation.py models/server.py models/wireless.py
+touch models/router.py models/worstation.py models/server.py models/wireless.py
 # touch = mettre en place des fichiers vides (sans toucher les existants)
 
 [ -f README.md ] && [ ! -s README.MD ] && echo "#Topologie réseau en Python" > README
