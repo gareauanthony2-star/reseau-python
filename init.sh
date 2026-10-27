@@ -18,7 +18,7 @@ __pycache__/
 .venv/
 .vscode/
 EOF
-# EOF = end of file = fin du ficher
+# EOF = end of file = fin du fichere
 # écrit la liste des éléments que GIT ignore
 
 if [ ! -d ".git" ]; then

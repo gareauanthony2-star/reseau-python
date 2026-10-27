@@ -1,3 +1,5 @@
+# c'est le moule de base, tous les autres équipements en héritent
+
 class Machine:
     def __init__(self, name, model, cpu=1, ram=1):
         self.name = name
